@@ -28,4 +28,10 @@ console.log(head, lis);
 // Test function
 !(function () {
   console.log('An instance of $ has a property domNode')
+  const testNode = new $(".head")
+  if (Array.isArray(testNode.domNode)) {
+    console.log("✅");
+  } else {
+    console.log('❌');
+  }
 })();
