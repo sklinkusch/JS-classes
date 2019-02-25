@@ -15,7 +15,16 @@ class Animal {
   }
 }
 
+class Bird extends Animal {
+  constructor(sound, countOfLegs) {
+    super("bird", sound, countOfLegs);
+  }
+}
+
 const giraffe = new Animal('Mammal', '...', 4);
 const cat = new Animal('cat', 'Meow', 4);
+const sparrow = new Bird("cheep cheep", 2);
 
-console.log(giraffe, cat);
+console.log(giraffe);
+console.log(cat);
+console.log(sparrow);
