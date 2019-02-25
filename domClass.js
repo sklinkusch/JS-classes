@@ -24,3 +24,8 @@ class $ {
 const head = new $(".head");
 const lis = new $("li");
 console.log(head, lis);
+
+// Test function
+!(function () {
+  console.log('An instance of $ has a property domNode')
+})();
